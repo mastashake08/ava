@@ -15,6 +15,7 @@ Route::get('/', function () {
 	return view('spark::welcome');
 });
 
+Route::post('contact-requested', 'ContactRequestController@store');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

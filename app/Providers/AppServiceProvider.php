@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Providers;
-
+use App\ContactRequest;
 use Illuminate\Support\ServiceProvider;
-
+use App\Event\ContactRequestCreated;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -13,7 +13,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //fire email event after request is made
+        ContactRequest::Created(function($contactRequest){
+          event(new ContactRequestCreated($contactRequest));
+        });
     }
 
     /**
