@@ -17,3 +17,8 @@
  * Spark Styling...
  */
 @import "vendor/laravel/spark/resources/assets/sass/themes/spark/spark";
+
+body{
+  background-image: url('img/stethoscope.jpg');
+  background-size: contain;
+}
