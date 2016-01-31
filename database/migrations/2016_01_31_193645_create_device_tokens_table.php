@@ -14,6 +14,7 @@ class CreateDeviceTokensTable extends Migration
     {
         Schema::create('device_tokens', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('token');
             $table->timestamps();
         });
     }
