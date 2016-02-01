@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\ContactRequest;
 use Illuminate\Http\Request;
 use App\ContactRequest;
 use App\Http\Requests;

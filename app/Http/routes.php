@@ -34,7 +34,7 @@ Route::post('contact-requested', 'ContactRequestController@store');
 |
 */
 
-
+Route::resource('notification','AlertController');
 Route::group(['middleware' => 'web'], function () {
     Route::get('home', ['middleware' => 'auth', function () {
         return view('home');
