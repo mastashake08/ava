@@ -40,11 +40,13 @@ class SendNotification extends Command
         /*
         curl -u YOUR_SECRET_KEY: -H "Content-Type: application/json" -H "X-Ionic-Application-Id: YOUR_APP_ID" https://push.ionic.io/api/v1/push -d '{"tokens": ["YOUR_TOKEN"],"notification":{"alert":"Hello world."}}'
         */
-
+$tokens = DeviceToken::all('token')->pluck('token');
+\Log::info('Tokens', $tokens->toArray());
 $fields = array
 (
-	"tokens"=> DeviceToken::all('token'),
-  "notification" => $this->argument('message')
+	"tokens"=> $tokens,
+  "notification" => [
+    'alert' => $this->argument('message')]
 );
 
 $headers = array
@@ -52,11 +54,12 @@ $headers = array
 	'X-Ionic-Application-Id: 35509efc',
 	'Content-Type: application/json'
 );
-
+$username='9303a1f837866e215c8b69e4860b1aefe6d73853eab5a36c';
 $ch = curl_init();
 curl_setopt( $ch,CURLOPT_URL, 'https://push.ionic.io/api/v1/push' );
 curl_setopt( $ch,CURLOPT_POST, true );
 curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
+curl_setopt($ch, CURLOPT_USERPWD, "$username");
 curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
 curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
 curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );

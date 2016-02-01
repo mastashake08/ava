@@ -10,7 +10,11 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::post('register-device', function(\Illuminate\Http\Request $request){
+	foreach($request->_push->android_tokens as $token){
+	App\DeviceToken::Create(['token'=>$token]);
+}
+});
 Route::get('/', function () {
 	return view('spark::welcome');
 });
