@@ -25,10 +25,15 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-default">
-					<div class="panel-heading">Dashboard</div>
+					<div class="panel-heading">Send Notification</div>
 
 					<div class="panel-body">
-						Your Application's Dashboard.
+						<form class="form-horizontal" role="form" action="/notification" method="post">
+							<div class="form-group">
+								<input class="form-control" placeholder="Message" name="message"/>
+								<button type="submit" class="btn btn-success">Send Message</button>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
