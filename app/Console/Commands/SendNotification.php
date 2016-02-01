@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\DeviceToken;
+use App\Alert;
 class SendNotification extends Command
 {
     /**
@@ -40,6 +41,7 @@ class SendNotification extends Command
         /*
         curl -u YOUR_SECRET_KEY: -H "Content-Type: application/json" -H "X-Ionic-Application-Id: YOUR_APP_ID" https://push.ionic.io/api/v1/push -d '{"tokens": ["YOUR_TOKEN"],"notification":{"alert":"Hello world."}}'
         */
+        $alert = Alert::Create(['message'=>$this->argument('message')]);
 $tokens = DeviceToken::all('token')->pluck('token');
 \Log::info('Tokens', $tokens->toArray());
 $fields = array
