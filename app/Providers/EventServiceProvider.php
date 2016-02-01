@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\ContactRequestCreated' => [
             'App\Listeners\ContactRequestCreatedListener',
         ],
+        'App\Events\NotificationCreated' => [
+            'App\Listeners\NotificationCreatedListener',
+        ],
     ];
 
     /**

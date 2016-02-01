@@ -8,8 +8,8 @@ class Alert extends Model
 {
     //
     protected $fillable=[
-      'token'
+      'message'
     ];
 
-    
+
 }
