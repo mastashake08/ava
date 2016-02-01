@@ -11,6 +11,9 @@
 |
 */
 Route::post('register-device', function(\Illuminate\Http\Request $request){
+	\Log::info(
+	'request' => $request->all()
+	)
 	foreach($request->_push->android_tokens as $token){
 	App\DeviceToken::Create(['token'=>$token]);
 }
