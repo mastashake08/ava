@@ -21,7 +21,7 @@ Route::post('register-device', function(\Illuminate\Http\Request $request){
 Route::get('/', function () {
 	return view('spark::welcome');
 });
-
+Route::resource('alert','AlertController');
 Route::post('contact-requested', 'ContactRequestController@store');
 /*
 |--------------------------------------------------------------------------
