@@ -20,4 +20,9 @@ class AlertController extends Controller
     ]);
     return back();
     }
+
+    public function show(Alert $alert)
+    {
+      return $alert;
+    }
 }
