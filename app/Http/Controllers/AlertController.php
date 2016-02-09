@@ -28,6 +28,6 @@ class AlertController extends Controller
 
     public function destroy(Alert $alert)
     {
-      return $alert->delete();
+      return response()->json(['deleted'=>$alert->delete()]);
     }
 }
