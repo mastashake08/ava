@@ -25,4 +25,9 @@ class AlertController extends Controller
     {
       return $alert;
     }
+
+    public function destroy(Alert $alert)
+    {
+      return $alert->delete();
+    }
 }
