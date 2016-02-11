@@ -42,29 +42,13 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-default">
-					<div class="panel-heading">Front Page What We Do</div>
+					<div class="panel-heading">Front Page Literature</div>
 
 					<div class="panel-body">
-						<form class="form-horizontal" role="form" action="/front-page-what-we-do" method="post">
+						<form class="form-horizontal" role="form" action="/new-front-page-lit" method="post">
 							<div class="form-group">
-								<textarea class="form-control" placeholder="Front Page What We Do Literature" name="front_page"></textarea>
-								<button type="submit" class="btn btn-success">Set Literature</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="panel panel-default">
-					<div class="panel-heading">Front Page Intro</div>
-
-					<div class="panel-body">
-						<form class="form-horizontal" role="form" action="/front-page-intro" method="post">
-							<div class="form-group">
-								<textarea class="form-control" placeholder="Front Page Intro Literature" name="front_page"></textarea>
+							Intro 	<textarea class="form-control"  name="whatwedo" value="">{{\App\FrontPageLit::find(1)->whatwedo}}</textarea>
+							What We Do	<textarea class="form-control"  name="intro">{{\App\FrontPageLit::find(1)->intro}}</textarea>
 								<button type="submit" class="btn btn-success">Set Literature</button>
 							</div>
 						</form>

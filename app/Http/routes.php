@@ -18,6 +18,8 @@ Route::post('register-device', function(\Illuminate\Http\Request $request){
 	App\DeviceToken::Create(['token'=>$request->token]);
 
 });
+Route::get('seed-front-page','FrontPageController@index');
+Route::post('new-front-page-lit','FrontPageController@store');
 Route::get('/', function () {
 	return view('spark::welcome');
 });

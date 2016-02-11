@@ -61,13 +61,7 @@
                 </div>
 
                 <div id="splash-inspiration-text">
-                  Accident Victims Alliance is a 12­year old health management organization directed by a
-
-20­year veteran of the insurance and healthcare industries. AVA’s mission is to provide FREE
-
-assistance to accident victims and hospital patients in their time of need; filling the gaps
-
-between injury, loss and recovery by managing post­hospitalization activities.
+                  {{\App\FrontPageLit::find(1)->whatwedo}}
                 </div>
             </div>
 
@@ -264,63 +258,8 @@ to appointments.
         <div class="row splash-customer-row">
             <div class="col-md-10 col-md-offset-1 text-center">
               <p>
-              Accident Victims Alliance is a 12­year old health management organization directed by a
-
-20 ­year veteran of the insurance and healthcare industries. AVA’s mission is to provide FREE
-
-assistance to accident victims and hospital patients in their time of need; filling the gaps
-
-between injury, loss and recovery by managing post­hospitalization activities.
-
-Health studies prove the importance of preventative care to decrease patient rebounding and
-
-readmission; keeping healthcare costs low and increase positive outcomes for patients. AVA
-
-provides support to medical institutions by ensuring patients have adequate post­discharge
-
-support.
-
-AVA supports medical institutions in the following manner:
-<ul>
-<li> Provide personalized transitional guidance for patient’s follow­up with a primary care</li>
-
-<li> Support patient's medication regimen and reconciliation.</li>
-
-<li> Perform home assessments to learn patient’s circumstances including transportation</li>
-
-<li> Connect patients to community resources to sustain their healing process.</li>
-
-<li> Educate vulnerable patients with limited medical literacy.</li>
-
-<li> Educate patients on the benefits associated with the Affordable Care Act.</li>
-</ul>
-AVA is seeking to support medical institutions / hospitals in Las Vegas and Los Angeles.
-
-Advocating for patients and connecting them to medical resources conveniently available in
-
-their communities.
-
-AVA can help:
-<ul>
-<li> INFORM​ those without Personal Health Insurance</li>
-
-<li> ELIMINATE​multiple non­productive ER visits overloading the hospital’s
-
-man­power, facility capacity and financial capabilities</li>
-
-<li> EDUCATE​people about Health Benefits and Rights our government has in place
-
-for citizens of California and Nevada</li>
-
-<li> ASSIST​those withOUT a Primary Care Physician</li>
-
-<li> STOP​ victimization and fraudulent claims</li>
-
-<li> STABILIZE i​nsurance rates ( Management + NO Fraud = Stable Rates )</li>
-</ul>
-
-For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​AVAKY.com
-</p>
+              {{\App\FrontPageLit::find(1)->intro}}
+            </p>
         </div>
 
         <!-- Footer -->
