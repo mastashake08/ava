@@ -21,7 +21,8 @@ Route::post('register-device', function(\Illuminate\Http\Request $request){
 Route::get('seed-front-page','FrontPageController@index');
 Route::post('new-front-page-lit','FrontPageController@store');
 Route::get('/', function () {
-	return view('spark::welcome');
+	//return view('spark::welcome');
+	return view('index2');
 });
 Route::resource('alert','AlertController');
 Route::post('contact-requested', 'ContactRequestController@store');
