@@ -47,8 +47,31 @@
 					<div class="panel-body">
 						<form class="form-horizontal" role="form" action="/new-front-page-lit" method="post">
 							<div class="form-group">
-							Intro 	<textarea class="form-control"  name="whatwedo" value="">{{\App\FrontPageLit::find(1)->whatwedo}}</textarea>
-							What We Do	<textarea class="form-control"  name="intro">{{\App\FrontPageLit::find(1)->intro}}</textarea>
+								<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
+								<br>
+								<input class="form-control" name="company_name" placeholder="Company Name" value="{{$frontPage->company_name}}" />
+								Top Page Header 	<input class="form-control"  name="top_page_header" value="{{$frontPage->top_page_header}}">
+								Top Page Body 	<textarea class="form-control"  name="top_page_body" value="">{{$frontPage->top_page_body}}</textarea>
+								About Page Header 	<input class="form-control"  name="about_page_header" value="{{$frontPage->about_page_header}}">
+								About Page Body 	<textarea class="form-control"  name="about_page_body" value="">{{$frontPage->about_page_body}}</textarea>
+								Services Page Header 	<input class="form-control"  name="services_page_header" value="{{$frontPage->services_page_header}}">
+								Services Page Header1 	<input class="form-control"  name="services_page_header1" value="{{$frontPage->services_page_header1}}">
+								Services Page Icon1 	<input class="form-control"  name="services_page_icon1" value="{{$frontPage->services_page_icon1}}">
+								Services Page Body1 	<textarea class="form-control"  name="services_page_body1" value="">{{$frontPage->services_page_body1}}</textarea>
+								Services Page Header2 	<input class="form-control"  name="services_page_header2" value="{{$frontPage->services_page_header2}}">
+								Services Page Icon2 	<input class="form-control"  name="services_page_icon2" value="{{$frontPage->services_page_icon2}}">
+								Services Page Body2 	<textarea class="form-control"  name="services_page_body2" value="">{{$frontPage->services_page_body2}}</textarea>
+								Services Page Header3 	<input class="form-control"  name="services_page_header3" value="{{$frontPage->services_page_header3}}">
+								Services Page Icon3 	<input class="form-control"  name="services_page_icon3" value="{{$frontPage->services_page_icon3}}">
+								Services Page Body3 	<textarea class="form-control"  name="services_page_body3" value="">{{$frontPage->services_page_body3}}</textarea>
+								Services Page Header4 	<input class="form-control"  name="services_page_header4" value="{{$frontPage->services_page_header4}}">
+								Services Page Icon4 	<input class="form-control"  name="services_page_icon4" value="{{$frontPage->services_page_icon4}}">
+								Services Page Body4 	<textarea class="form-control"  name="services_page_body4" value="">{{$frontPage->services_page_body4}}</textarea>
+								Call To Action 	<input class="form-control"  name="call_to_action_body" value="{{$frontPage->call_to_action_body}}">
+								Contact Page Header 	<input class="form-control" type="text" name="contact_page_header" value="{{$frontPage->contact_page_header}}">
+								Contact Page Phone 	<input class="form-control" type="tel" name="contact_page_phone" value="{{$frontPage->contact_page_phone}}">
+								Contact Page Email 	<input class="form-control" type="email" name="contact_page_email" value="{{$frontPage->contact_page_email}}">
+								Contact Page Body 	<textarea class="form-control"  name="contact_page_body" value="">{{$frontPage->contact_page_body}}</textarea>
 								<button type="submit" class="btn btn-success">Set Literature</button>
 							</div>
 						</form>

@@ -36,6 +36,7 @@ For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​
     }
 
     public function store(Request $request){
+    
       $front = FrontPageLit::find(1);
       $front->fill($request->all());
       $front->save();

@@ -22,7 +22,8 @@ Route::get('seed-front-page','FrontPageController@index');
 Route::post('new-front-page-lit','FrontPageController@store');
 Route::get('/', function () {
 	//return view('spark::welcome');
-	return view('index2');
+	$frontPage = \App\FrontPageLit::find(1);
+		return view('index2')->with(['frontPage' => $frontPage]);
 });
 Route::resource('alert','AlertController');
 Route::post('contact-requested', 'ContactRequestController@store');
@@ -40,6 +41,7 @@ Route::post('contact-requested', 'ContactRequestController@store');
 Route::resource('notification','AlertController');
 Route::group(['middleware' => 'web'], function () {
     Route::get('home', ['middleware' => 'auth', function () {
-        return view('home');
+			$frontPage = \App\FrontPageLit::find(1);
+        return view('home')->with(['frontPage' => $frontPage]);
     }]);
 });

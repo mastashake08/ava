@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>{{$frontPage->title}}</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="theme/css/bootstrap.min.css" type="text/css">
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">{{$frontPage->company_name}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,9 +74,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1>{{$frontPage->top_page_header}}</h1>
                 <hr>
-                <p>{{\App\FrontPageLit::find(1)->whatwedo}}</p>
+                <p>{{$frontPage->top_page_body}}</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -86,9 +86,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+                    <h2 class="section-heading">{{$frontPage->about_page_header}}</h2>
                     <hr class="light">
-                    <p class="text-faded">  {{\App\FrontPageLit::find(1)->intro}}</p>
+                    <p class="text-faded">  {{$frontPage->about_page_body}}</p>
                     <a href="#" class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
+                    <h2 class="section-heading">{{$frontPage->services_page_header}}</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -108,30 +108,30 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <i class="fa fa-4x  {{$frontPage->services_page_icon1}} wow bounceIn text-primary"></i>
+                        <h3>{{$frontPage->services_page_header1}}</h3>
+                        <p class="text-muted">{{$frontPage->services_page_body1}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <i class="fa fa-4x  {{$frontPage->services_page_icon2}} wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>{{$frontPage->services_page_header2}}</h3>
+                        <p class="text-muted">{{$frontPage->services_page_body2}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <i class="fa fa-4x  {{$frontPage->services_page_icon3}} wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>{{$frontPage->services_page_header3}}</h3>
+                        <p class="text-muted">{{$frontPage->services_page_body3}}</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <i class="fa fa-4x  {{$frontPage->services_page_icon4}} wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>{{$frontPage->services_page_header4}}</h3>
+                        <p class="text-muted">{{$frontPage->services_page_body4}} </p>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
+                <h2>{{$frontPage->call_to_action_body}}</h2>
                 <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
             </div>
         </div>
@@ -248,17 +248,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">{{$frontPage->contact_page_header}}</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>{{$frontPage->contact_page_body}}</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
+                    <p>{{$frontPage->contact_page_phone}}</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:{{$frontPage->contact_page_email}}"> {{$frontPage->contact_page_email}} </a></p>
                 </div>
             </div>
         </div>
