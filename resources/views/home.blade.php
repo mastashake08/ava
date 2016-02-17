@@ -48,9 +48,8 @@
 						To change service icons refer to this <a target="_blank" href="https://fortawesome.github.io/Font-Awesome/cheatsheet/">cheatsheet</a>
 						<form class="form-horizontal" role="form" action="/new-front-page-lit" method="post">
 							<div class="form-group">
-								<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
-								<br>
-								<input class="form-control" name="company_name" placeholder="Company Name" value="{{$frontPage->company_name}}" />
+							Title	<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
+							Company Name	<input class="form-control" name="company_name" placeholder="Company Name" value="{{$frontPage->company_name}}" />
 								Top Page Header 	<input class="form-control"  name="top_page_header" value="{{$frontPage->top_page_header}}">
 								Top Page Body 	<textarea class="form-control"  name="top_page_body" value="">{{$frontPage->top_page_body}}</textarea>
 								About Page Header 	<input class="form-control"  name="about_page_header" value="{{$frontPage->about_page_header}}">
