@@ -45,6 +45,7 @@
 					<div class="panel-heading">Front Page Literature</div>
 
 					<div class="panel-body">
+						To change service icons refer to this <a target="_blank" href="https://fortawesome.github.io/Font-Awesome/cheatsheet/">cheatsheet</a>
 						<form class="form-horizontal" role="form" action="/new-front-page-lit" method="post">
 							<div class="form-group">
 								<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
