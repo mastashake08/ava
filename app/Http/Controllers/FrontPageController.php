@@ -36,10 +36,33 @@ For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​
     }
 
     public function store(Request $request){
-    
+
       $front = FrontPageLit::find(1);
       $front->fill($request->all());
       $front->save();
+      // FILE UPLOADS
+      if($request->hasFile('header')){
+
+      }
+      if($request->hasFile('portfolio1')){
+
+      }
+      if($request->hasFile('portfolio2')){
+
+      }
+      if($request->hasFile('portfolio3')){
+
+      }
+      if($request->hasFile('portfolio4')){
+
+      }
+      if($request->hasFile('portfolio5')){
+
+      }
+      if($request->hasFile('portfolio6')){
+
+      }
+
       return back();
     }
 
