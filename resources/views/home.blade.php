@@ -46,7 +46,7 @@
 
 					<div class="panel-body">
 						To change service icons refer to this <a target="_blank" href="https://fortawesome.github.io/Font-Awesome/cheatsheet/">cheatsheet</a>
-						<form class="form-horizontal" role="form" action="/new-front-page-lit" method="post">
+						<form class="form-horizontal" enctype="multipart/form-data" role="form" action="/new-front-page-lit" method="post">
 							<div class="form-group">
 							Title	<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
 							Company Name	<input class="form-control" name="company_name" placeholder="Company Name" value="{{$frontPage->company_name}}" />
@@ -72,6 +72,13 @@
 								Contact Page Phone 	<input class="form-control" type="tel" name="contact_page_phone" value="{{$frontPage->contact_page_phone}}">
 								Contact Page Email 	<input class="form-control" type="email" name="contact_page_email" value="{{$frontPage->contact_page_email}}">
 								Contact Page Body 	<textarea class="form-control"  name="contact_page_body" value="">{{$frontPage->contact_page_body}}</textarea>
+								Header Image 	<input class="form-control" type="file" name="header" >
+								Portfolio Image 1 	<input class="form-control" type="file" name="portfolio1" >
+								Portfolio Image 2 	<input class="form-control" type="file" name="portfolio2" >
+								Portfolio Image 3 	<input class="form-control" type="file" name="portfolio3" >
+								Portfolio Image 4 	<input class="form-control" type="file" name="portfolio4" >
+								Portfolio Image 5 	<input class="form-control" type="file" name="portfolio5" >
+								Portfolio Image 6 	<input class="form-control" type="file" name="portfolio6" >
 								<button type="submit" class="btn btn-success">Set Literature</button>
 							</div>
 						</form>

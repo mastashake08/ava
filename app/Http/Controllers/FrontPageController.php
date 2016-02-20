@@ -42,28 +42,28 @@ For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​
       $front->save();
       // FILE UPLOADS
 
-      $basePath = public_path('theme/image/img/');
+      $basePath = public_path('theme/img/');
       if($request->hasFile('header')){
          Image::make($request->file('header')->getRealPath())->save($basePath.'header.jpg');
 
       }
       if($request->hasFile('portfolio1')){
-         Image::make($request->file('portfolio1')->getRealPath())->resize(650, 350)->save($basePath.'portfolio1.jpg');
+         Image::make($request->file('portfolio1')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/1.jpg');
       }
       if($request->hasFile('portfolio2')){
-        Image::make($request->file('portfolio2')->getRealPath())->resize(650, 350)->save($basePath.'portfolio2.jpg');
+        Image::make($request->file('portfolio2')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/2.jpg');
       }
       if($request->hasFile('portfolio3')){
-        Image::make($request->file('portfolio3')->getRealPath())->resize(650, 350)->save($basePath.'portfolio3.jpg');
+        Image::make($request->file('portfolio3')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/3.jpg');
       }
       if($request->hasFile('portfolio4')){
-        Image::make($request->file('portfolio4')->getRealPath())->resize(650, 350)->save($basePath.'portfolio4.jpg');
+        Image::make($request->file('portfolio4')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/4.jpg');
       }
       if($request->hasFile('portfolio5')){
-        Image::make($request->file('portfolio5')->getRealPath())->resize(650, 350)->save($basePath.'portfolio5.jpg');
+        Image::make($request->file('portfolio5')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/5.jpg');
       }
       if($request->hasFile('portfolio6')){
-        Image::make($request->file('portfolio6')->getRealPath())->resize(650, 350)->save($basePath.'portfolio6.jpg');
+        Image::make($request->file('portfolio6')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/6.jpg');
       }
 
       return back();
