@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\FrontPageLit;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use Image;
 class FrontPageController extends Controller
 {
     //
@@ -41,26 +41,29 @@ For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​
       $front->fill($request->all());
       $front->save();
       // FILE UPLOADS
+
+      $basePath = public_path('theme/image/img/');
       if($request->hasFile('header')){
+         Image::make($request->file('header')->getRealPath())->save($basePath.'header.jpg');
 
       }
       if($request->hasFile('portfolio1')){
-
+         Image::make($request->file('portfolio1')->getRealPath())->resize(650, 350)->save($basePath.'portfolio1.jpg');
       }
       if($request->hasFile('portfolio2')){
-
+        Image::make($request->file('portfolio2')->getRealPath())->resize(650, 350)->save($basePath.'portfolio2.jpg');
       }
       if($request->hasFile('portfolio3')){
-
+        Image::make($request->file('portfolio3')->getRealPath())->resize(650, 350)->save($basePath.'portfolio3.jpg');
       }
       if($request->hasFile('portfolio4')){
-
+        Image::make($request->file('portfolio4')->getRealPath())->resize(650, 350)->save($basePath.'portfolio4.jpg');
       }
       if($request->hasFile('portfolio5')){
-
+        Image::make($request->file('portfolio5')->getRealPath())->resize(650, 350)->save($basePath.'portfolio5.jpg');
       }
       if($request->hasFile('portfolio6')){
-
+        Image::make($request->file('portfolio6')->getRealPath())->resize(650, 350)->save($basePath.'portfolio6.jpg');
       }
 
       return back();
