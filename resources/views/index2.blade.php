@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{$frontPage->about_page_body}}">
+    <meta name="author" content="Jyrone Parker">
 
     <title>{{$frontPage->title}}</title>
 
@@ -77,7 +77,7 @@
                 <h1>{{$frontPage->top_page_header}}</h1>
                 <hr>
                 <p>{{$frontPage->top_page_body}}</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+
             </div>
         </div>
     </header>
@@ -165,7 +165,7 @@
 
                                 </div>
                                 <div class="project-name">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
 
                                 </div>
                                 <div class="project-name">
-                                    
+
                                 </div>
                             </div>
                         </div>
