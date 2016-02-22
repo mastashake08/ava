@@ -78,7 +78,7 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>{{$frontPage->top_page_header}}</h1>
-                <hr>
+                
                 <p>{{$frontPage->top_page_body}}</p>
 
             </div>
@@ -339,7 +339,7 @@
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_6_header}}
                                 </div>
-                                
+
                             </div>
                         </div>
                     </a>
