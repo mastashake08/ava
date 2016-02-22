@@ -12,7 +12,7 @@
 
 			<!-- Branding Image -->
 			<a class="navbar-brand" href="/">
-				Spark
+				{{\App\FrontPageLit::find(1)->company_name}}
 			</a>
 		</div>
 

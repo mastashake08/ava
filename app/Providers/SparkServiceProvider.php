@@ -16,7 +16,7 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $invoiceWith = [
-        'vendor' => 'Your Company',
+        'vendor' => 'Jyrone Parker',
         'product' => 'Your Product',
         'street' => 'PO Box 111',
         'location' => 'Your Town, 12345',
