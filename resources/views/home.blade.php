@@ -76,32 +76,32 @@
 								Portfolio Image 1 	<input class="form-control" type="file" name="portfolio1" >
 								Portfolio Header 1 	<input class="form-control" type="text" name="pic_1_header" value="{{$frontPage->pic_1_header}}">
 								Portfolio Body 1 	<input class="form-control" type="text" name="pic_1_body" value="{{$frontPage->pic_1_body}}">
-								Portfolio Link 1 	<input class="form-control" type="text" name="pic_1_link" value="{{$frontPage->pic_1_link}}">
+							
 
 								Portfolio Image 2 	<input class="form-control" type="file" name="portfolio2" >
 
 								Portfolio Header 2 	<input class="form-control" type="text" name="pic_2_header" value="{{$frontPage->pic_2_header}}">
 								Portfolio Body 2 	<input class="form-control" type="text" name="pic_2_body" value="{{$frontPage->pic_2_body}}">
-								Portfolio Link 2 	<input class="form-control" type="text" name="pic_2_link" value="{{$frontPage->pic_2_link}}">
+
 								Portfolio Image 3 	<input class="form-control" type="file" name="portfolio3" >
 
 								Portfolio Header 3 	<input class="form-control" type="text" name="pic_3_header" value="{{$frontPage->pic_3_header}}">
 								Portfolio Body 3 	<input class="form-control" type="text" name="pic_3_body" value="{{$frontPage->pic_3_body}}">
-								Portfolio Link 3 	<input class="form-control" type="text" name="pic_3_link" value="{{$frontPage->pic_3_link}}">
+
 								Portfolio Image 4 	<input class="form-control" type="file" name="portfolio4" >
 
 								Portfolio Header 4 	<input class="form-control" type="text" name="pic_4_header" value="{{$frontPage->pic_4_header}}">
 								Portfolio Body 4 	<input class="form-control" type="text" name="pic_4_body" value="{{$frontPage->pic_4_body}}">
-								Portfolio Link 4 	<input class="form-control" type="text" name="pic_4_link" value="{{$frontPage->pic_4_link}}">
+
 								Portfolio Image 5 	<input class="form-control" type="file" name="portfolio5" >
 
 								Portfolio Header 5 	<input class="form-control" type="text" name="pic_5_header" value="{{$frontPage->pic_5_header}}">
 								Portfolio Body 5 	<input class="form-control" type="text" name="pic_5_body" value="{{$frontPage->pic_5_body}}">
-								Portfolio Link 5 	<input class="form-control" type="text" name="pic_5_link" value="{{$frontPage->pic_5_link}}">
+
 								Portfolio Image 6 	<input class="form-control" type="file" name="portfolio6" >
 								Portfolio Header 6 	<input class="form-control" type="text" name="pic_6_header" value="{{$frontPage->pic_6_header}}">
 								Portfolio Body 6 	<input class="form-control" type="text" name="pic_6_body" value="{{$frontPage->pic_6_body}}">
-								Portfolio Link 6 	<input class="form-control" type="text" name="pic_6_link" value="{{$frontPage->pic_6_link}}">
+
 
 								Forms	<input class="form-control" type="file" name="forms" accept=".zip" >
 								<button type="submit" class="btn btn-success">Set Literature</button>
