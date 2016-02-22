@@ -64,6 +64,9 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a href="/enrollment-forms">Enrollment Forms</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

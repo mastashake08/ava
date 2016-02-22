@@ -27,6 +27,10 @@ Route::get('/', function () {
 });
 Route::resource('alert','AlertController');
 Route::post('contact-requested', 'ContactRequestController@store');
+Route::get('enrollment-forms', function(){
+	$path = public_path('download-forms').'/enrollment-forms.zip';
+	return response()->download($path);
+});
 /*
 |--------------------------------------------------------------------------
 | Application Routes
