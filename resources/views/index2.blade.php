@@ -142,90 +142,90 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_1_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_1_header}}
                                 </div>
                                 <div class="project-name">
-
+                                  {{$frontPage->pic_1_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_2_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_2_header}}
                                 </div>
                                 <div class="project-name">
-
+                                  {{$frontPage->pic_2_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_3_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_3_header}}
                                 </div>
                                 <div class="project-name">
-
+                                  {{$frontPage->pic_3_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_4_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_4_header}}
                                 </div>
                                 <div class="project-name">
-
+                                  {{$frontPage->pic_4_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_5_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_5_header}}
                                 </div>
                                 <div class="project-name">
-
+                                  {{$frontPage->pic_5_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="{{$frontPage->pic_6_link}}" class="portfolio-box">
                         <img src="theme/img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-
+                                  {{$frontPage->pic_6_header}}
                                 </div>
-                                <div class="project-name">logo1
-
+                                <div class="project-name">
+                                  {{$frontPage->pic_6_body}}
                                 </div>
                             </div>
                         </div>
