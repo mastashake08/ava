@@ -141,95 +141,205 @@
         </div>
     </section>
 
+    <!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{$frontPage->pic_1_header}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{$frontPage->pic_1_body}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">{{$frontPage->pic_2_header}}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{$frontPage->pic_2_body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- Modal -->
+<div id="myModal3" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">{{$frontPage->pic_3_header}}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{$frontPage->pic_3_body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- Modal -->
+<div id="myModal4" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">{{$frontPage->pic_4_header}}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{$frontPage->pic_4_body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- Modal -->
+<div id="myModal5" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">{{$frontPage->pic_5_header}}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{$frontPage->pic_5_body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>
+<!-- Modal -->
+<div id="myModal6" class="modal fade" role="dialog">
+<div class="modal-dialog">
+
+<!-- Modal content-->
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">{{$frontPage->pic_6_header}}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{$frontPage->pic_6_body}}</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_1_link}}" class="portfolio-box">
-                        <img src="theme/img/portfolio/1.jpg" class="img-responsive" alt="">
+                    <a data-toggle="modal" data-target="#myModal1" class="portfolio-box">
+                        <img src="theme/img/portfolio/1.jpg" class="img-responsive"  alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_1_header}}
-                                </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_1_body}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_2_link}}" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#myModal2"  class="portfolio-box">
                         <img src="theme/img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_2_header}}
                                 </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_2_body}}
-                                </div>
+
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_3_link}}" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#myModal3"  class="portfolio-box">
                         <img src="theme/img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_3_header}}
                                 </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_3_body}}
-                                </div>
+
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_4_link}}" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#myModal4"  class="portfolio-box">
                         <img src="theme/img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_4_header}}
                                 </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_4_body}}
-                                </div>
+
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_5_link}}" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#myModal5" class="portfolio-box">
                         <img src="theme/img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_5_header}}
                                 </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_5_body}}
-                                </div>
+
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="{{$frontPage->pic_6_link}}" class="portfolio-box">
+                    <a data-toggle="modal" data-target="#myModal6"  class="portfolio-box">
                         <img src="theme/img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                   {{$frontPage->pic_6_header}}
                                 </div>
-                                <div class="project-name">
-                                  {{$frontPage->pic_6_body}}
-                                </div>
+                                
                             </div>
                         </div>
                     </a>

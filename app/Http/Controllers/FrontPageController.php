@@ -65,6 +65,9 @@ For more information contact: R O Brooks @ (888) HELP ­ AVA​­or­ HelpMe@​
       if($request->hasFile('portfolio6')){
         Image::make($request->file('portfolio6')->getRealPath())->resize(650, 350)->save($basePath.'portfolio/6.jpg');
       }
+      if($request->hasFile('forms')){
+        $request->file('forms')->move(public_path('download-forms/').'enrollment-forms.zip')
+      }
 
       return back();
     }

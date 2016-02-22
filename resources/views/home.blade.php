@@ -102,6 +102,8 @@
 								Portfolio Header 6 	<input class="form-control" type="text" name="pic_6_header" value="{{$frontPage->pic_6_header}}">
 								Portfolio Body 6 	<input class="form-control" type="text" name="pic_6_body" value="{{$frontPage->pic_6_body}}">
 								Portfolio Link 6 	<input class="form-control" type="text" name="pic_6_link" value="{{$frontPage->pic_6_link}}">
+
+								Forms	<input class="form-control" type="file" name="forms" accept=".zip" >
 								<button type="submit" class="btn btn-success">Set Literature</button>
 							</div>
 						</form>
