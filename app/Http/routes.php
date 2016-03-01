@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::post('request-more-info', 'AlertController@requestInfo');
 Route::post('register-device', function(\Illuminate\Http\Request $request){
 	\Log::info(
 	'request', $request->all()
