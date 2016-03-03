@@ -380,7 +380,7 @@
                   <input class="form-control" placeholder="Email" name="email" type="email">
                   <input class="form-control" placeholder="Phone" name="phone" type="tel">
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
-                  <button type="submit" class="btn btn-default">Request More Info</button>
+                  <button type="submit" class="btn btn-default btn-xl wow tada">Request More Info</button>
                 </div>
                 </form>
             </div>
