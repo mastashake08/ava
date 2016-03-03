@@ -78,7 +78,7 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>{{$frontPage->top_page_header}}</h1>
-                
+
                 <p>{{$frontPage->top_page_body}}</p>
 
             </div>
@@ -373,6 +373,13 @@
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:{{$frontPage->contact_page_email}}"> {{$frontPage->contact_page_email}} </a></p>
                 </div>
+                <form role="form" method="POST" action="/request-more-info-home">
+                  <input placeholder="First Name" name="first_name" type="text">
+                  <input placeholder="Last Name" name="last_name" type="text">
+                  <input placeholder="Email" name="email" type="email">
+                  <input placeholder="Phone" name="phone" type="tel">
+                  <textarea placeholder="Comments" name="comments" type="text"></textarea>
+                </form>
             </div>
         </div>
     </section>

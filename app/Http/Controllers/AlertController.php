@@ -19,6 +19,16 @@ class AlertController extends Controller
         $message->subject('MORE INFORMATION REQUESTED!');
       });
     }
+
+    public function requestInfoHome(Request $request){
+      $text = $request->first_name.' '.$request->last_name.' has requested more information. You can reach them at '. $request->email.' and '.$request->phone. '. COMMENTS: '.$request->comments;
+      Mail::raw($text,function($message){
+        $message->from('alerts@anchm.com');
+        $message->to('brooks@21stcenturymoves.com');
+        $message->subject('MORE INFORMATION REQUESTED!');
+      });
+      return back();
+    }
     //
     public function index(){
       return Alert::all();

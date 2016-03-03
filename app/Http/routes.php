@@ -11,6 +11,7 @@
 |
 */
 Route::post('request-more-info', 'AlertController@requestInfo');
+Route::post('request-more-info-home', 'AlertController@requestInfo');
 Route::post('register-device', function(\Illuminate\Http\Request $request){
 	\Log::info(
 	'request', $request->all()
