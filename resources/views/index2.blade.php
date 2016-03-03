@@ -374,11 +374,14 @@
                     <p><a href="mailto:{{$frontPage->contact_page_email}}"> {{$frontPage->contact_page_email}} </a></p>
                 </div>
                 <form role="form" method="POST" action="/request-more-info-home">
-                  <input placeholder="First Name" name="first_name" type="text">
-                  <input placeholder="Last Name" name="last_name" type="text">
-                  <input placeholder="Email" name="email" type="email">
-                  <input placeholder="Phone" name="phone" type="tel">
-                  <textarea placeholder="Comments" name="comments" type="text"></textarea>
+                  <div class="form-group">
+                  <input class="form-control" placeholder="First Name" name="first_name" type="text">
+                  <input class="form-control" placeholder="Last Name" name="last_name" type="text">
+                  <input class="form-control" placeholder="Email" name="email" type="email">
+                  <input class="form-control" placeholder="Phone" name="phone" type="tel">
+                  <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
+                  <button type="submit" class="btn btn-default">Request More Info</button>
+                </div>
                 </form>
             </div>
         </div>
