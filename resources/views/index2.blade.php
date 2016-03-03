@@ -375,10 +375,10 @@
                 </div>
                 <form role="form" method="POST" action="/request-more-info-home">
                   <div class="form-group">
-                  <input class="form-control" placeholder="First Name" name="first_name" type="text">
-                  <input class="form-control" placeholder="Last Name" name="last_name" type="text">
-                  <input class="form-control" placeholder="Email" name="email" type="email">
-                  <input class="form-control" placeholder="Phone" name="phone" type="tel">
+                  <input class="form-control" required placeholder="First Name" name="first_name" type="text">
+                  <input class="form-control" required placeholder="Last Name" name="last_name" type="text">
+                  <input class="form-control" required placeholder="Email" name="email" type="email">
+                  <input class="form-control" required placeholder="Phone" name="phone" type="tel">
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
                   <button type="submit" class="btn btn-default btn-xl wow tada">Request More Info</button>
                 </div>
