@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class SmsGateway extends Migration
+class CreateSmsGateway extends Migration
 {
     /**
      * Run the migrations.
@@ -27,6 +27,6 @@ class SmsGateway extends Migration
      */
     public function down()
     {
-        Schema::drop('front_page_literature');
+        Schema::drop('sms_gateways');
     }
 }
