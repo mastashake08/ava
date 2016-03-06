@@ -59,7 +59,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#network">Network</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -92,7 +92,7 @@
                     <h2 class="section-heading">{{$frontPage->about_page_header}}</h2>
                     <hr class="light">
                     <p class="text-faded">  {{$frontPage->about_page_body}}</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="#contact" class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -264,7 +264,7 @@
 
 
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="network">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -348,14 +348,7 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>{{$frontPage->call_to_action_body}}</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
-            </div>
-        </div>
-    </aside>
+
 
     <section id="contact">
         <div class="container">
