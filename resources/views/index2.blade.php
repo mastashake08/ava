@@ -379,8 +379,8 @@
                     @endforeach
                   </select>
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
-                  <button type="submit" class="btn btn-default btn-xl wow tada">Request More Info</button>
                 </div>
+                <button type="submit" class="btn btn-default btn-xl wow tada center-block">Request More Info</button>
                 </form>
             </div>
         </div>
