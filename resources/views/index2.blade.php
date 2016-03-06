@@ -92,7 +92,7 @@
                     <h2 class="section-heading">{{$frontPage->about_page_header}}</h2>
                     <hr class="light">
                     <p class="text-faded">  {{$frontPage->about_page_body}}</p>
-                    <a href="#contact" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="#contact" class="page-scroll btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
