@@ -15,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
     {
         //fire email event after request is made
         ContactRequest::Created(function($contactRequest){
-          event(new ContactRequestCreated($contactRequest));
+          //event(new ContactRequestCreated($contactRequest));
         });
     }
 

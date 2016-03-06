@@ -379,6 +379,12 @@
                   <input class="form-control" required placeholder="Last Name" name="last_name" type="text">
                   <input class="form-control" required placeholder="Email" name="email" type="email">
                   <input class="form-control" required placeholder="Phone" name="phone" type="tel">
+                  <select class="form-control" required="true" id="carrier" name="carrier">
+                    <option value="" disabled selected>Select Your Phone Carrier</option>
+                    @foreach($gateways as $gateway)
+                    <option value="{{$gateway->address}}">{{$gateway->name}}</option>
+                    @endforeach
+                  </select>
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
                   <button type="submit" class="btn btn-default btn-xl wow tada">Request More Info</button>
                 </div>
