@@ -50,6 +50,11 @@
 							<div class="form-group">
 							Title	<input class="form-control" name="title" placeholder="Title" value="{{$frontPage->title}}" />
 							Company Name	<input class="form-control" name="company_name" placeholder="Company Name" value="{{$frontPage->company_name}}" />
+							Link 1	<input class="form-control" name="link_1" placeholder="Link 1" value="{{$frontPage->link_1}}" />
+							Link 2	<input class="form-control" name="link_2" placeholder="Link 2" value="{{$frontPage->link_2}}" />
+							Link 3	<input class="form-control" name="link_3" placeholder="Link 3" value="{{$frontPage->link_3}}" />
+							Link 4	<input class="form-control" name="link_4" placeholder="Link 4" value="{{$frontPage->link_4}}" />
+							Link 5	<input class="form-control" name="link_5" placeholder="Link 5" value="{{$frontPage->link_5}}" />
 								Top Page Header 	<input class="form-control"  name="top_page_header" value="{{$frontPage->top_page_header}}">
 								Top Page Body 	<textarea class="form-control"  name="top_page_body" value="">{{$frontPage->top_page_body}}</textarea>
 								About Page Header 	<input class="form-control"  name="about_page_header" value="{{$frontPage->about_page_header}}">
@@ -76,7 +81,7 @@
 								Portfolio Image 1 	<input class="form-control" type="file" name="portfolio1" >
 								Portfolio Header 1 	<input class="form-control" type="text" name="pic_1_header" value="{{$frontPage->pic_1_header}}">
 								Portfolio Body 1 	<input class="form-control" type="text" name="pic_1_body" value="{{$frontPage->pic_1_body}}">
-							
+
 
 								Portfolio Image 2 	<input class="form-control" type="file" name="portfolio2" >
 

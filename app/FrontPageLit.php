@@ -53,5 +53,10 @@ class FrontPageLit extends Model
       'pic_6_header',
       'pic_6_body',
       'pic_6_link',
+      'link_1',
+      'link_2',
+      'link_3',
+      'link_4',
+      'link_5',
     ];
 }

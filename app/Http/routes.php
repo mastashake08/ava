@@ -25,7 +25,7 @@ Route::post('new-front-page-lit','FrontPageController@store');
 Route::get('/', function () {
 	//return view('spark::welcome');
 	$frontPage = \App\FrontPageLit::find(1);
-	$gateways = \App\SmsGateway::all();
+	$gateways = \App\SmsGateway::all()->sortBy('name');
 		return view('index2')->with(['frontPage' => $frontPage,'gateways'=>$gateways]);
 });
 Route::resource('alert','AlertController');

@@ -53,19 +53,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#{{str_slug($frontPage->link_1)}}">{{$frontPage->link_1}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#{{str_slug($frontPage->link_2)}}">{{$frontPage->link_2}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#network">Network</a>
+                        <a class="page-scroll" href="#{{str_slug($frontPage->link_3)}}">{{$frontPage->link_3}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#{{str_slug($frontPage->link_4)}}">{{$frontPage->link_4}}</a>
                     </li>
                     <li>
-                        <a href="/enrollment-forms">Enrollment Forms</a>
+                        <a href="#{{str_slug($frontPage->link_5)}}">{{$frontPage->link_5}}</a>
                     </li>
                 </ul>
             </div>
@@ -85,20 +85,20 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="{{str_slug($frontPage->link_1)}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">{{$frontPage->about_page_header}}</h2>
                     <hr class="light">
                     <p class="text-faded">  {{$frontPage->about_page_body}}</p>
-                    <a href="#contact" class="page-scroll btn btn-default btn-xl">Get Started!</a>
+                    <a href="{{str_slug($frontPage->link_4)}}" class="page-scroll btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="{{str_slug($frontPage->link_2)}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -264,7 +264,7 @@
 
 
 
-    <section class="no-padding" id="network">
+    <section class="no-padding" id="{{str_slug($frontPage->link_3)}}">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -350,7 +350,7 @@
 
 
 
-    <section id="contact">
+    <section id="{{str_slug($frontPage->link_4)}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -380,7 +380,7 @@
                   </select>
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
                 </div>
-                <button type="submit" class="btn btn-default btn-xl wow tada center-block">Request More Info</button>
+                <button type="submit" class="btn btn-success btn-xl wow tada center-block">Request More Info</button>
                 </form>
             </div>
         </div>
