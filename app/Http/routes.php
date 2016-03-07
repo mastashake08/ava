@@ -47,7 +47,7 @@ Route::get('enrollment-forms', function(){
 
 Route::resource('notification','AlertController');
 Route::group(['middleware' => 'web'], function () {
-    Route::get('home', ['middleware' => 'auth', function () {
+    Route::get('home', ['middleware' => 'auth.basic', function () {
 			$frontPage = \App\FrontPageLit::find(1);
         return view('home')->with(['frontPage' => $frontPage]);
     }]);
