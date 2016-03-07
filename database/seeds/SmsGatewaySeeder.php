@@ -11,6 +11,10 @@ class SmsGatewaySeeder extends Seeder
      */
     public function run()
     {
+      $sms = SmsGateway::all();
+      foreach($sms as $s){
+        $s->delete();
+      }
         //
         $gateways = [
           ['name' => 'Sprint',
