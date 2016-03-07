@@ -44,7 +44,7 @@ class SendNotification extends Command
         curl -u YOUR_SECRET_KEY: -H "Content-Type: application/json" -H "X-Ionic-Application-Id: YOUR_APP_ID" https://push.ionic.io/api/v1/push -d '{"tokens": ["YOUR_TOKEN"],"notification":{"alert":"Hello world."}}'
         */
         $numbers = ContactRequest::all()->pluck('phone');
-  
+
         $alert = Alert::Create(['message'=>$this->argument('message')]);
 /*$tokens = DeviceToken::all('token')->pluck('token');
 \Log::info('Tokens', $tokens->toArray());
@@ -73,11 +73,16 @@ $result = curl_exec($ch );
 curl_close( $ch );
 echo $result;*/
 foreach($numbers as $number){
+  try{
   Mail::raw($this->argument('message'),function($message) use ($number){
     $message->from('alerts@anchm.com');
     $message->to($number);
     $message->subject('New Info!');
   });
+}
+catch(Exception $e){
+  break;
+}
 }
     }
 }

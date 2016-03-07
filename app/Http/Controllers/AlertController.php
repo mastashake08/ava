@@ -31,7 +31,7 @@ class AlertController extends Controller
         'email' => $request->email,
         'phone' => $request->phone.$request->carrier
         ]);
-      
+
 
       Mail::raw($text,function($message){
         $message->from('alerts@anchm.com');
