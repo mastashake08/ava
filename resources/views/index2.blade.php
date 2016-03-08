@@ -64,9 +64,7 @@
                     <li>
                         <a class="page-scroll" href="#{{str_slug($frontPage->link_4)}}">{{$frontPage->link_4}}</a>
                     </li>
-                    <li>
-                        <a href="enrollment-forms">{{$frontPage->link_5}}</a>
-                    </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
