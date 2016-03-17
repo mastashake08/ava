@@ -1,7 +1,7 @@
 var Twit = require('twit')
 var dm = "American National Consumer Health Management. Care management strategies to increase positive patient outcomes. Follow/Like to learn more";
 var LineByLineReader = require('line-by-line');
-var lr = new LineByLineReader('~/default/node/Keywords.csv'), tracks = [];
+var lr = new LineByLineReader('Keywords.csv'), tracks = [];
 lr.on('error', function (err) {
 	// 'err' contains error object
   console.log('ERROR!! ' + err);
