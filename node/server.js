@@ -38,6 +38,8 @@ var T = new Twit({
 
   stream.on('tweet', function (tweet) {
     //...
+    T.post('favorites/create',{id:tweet.id});
+    console.log('Tweet ID: ' + tweet.id);
     T.post('friendships/create',{user_id: tweet.user.id});
     console.log(tweet.text);
 
