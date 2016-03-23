@@ -12,7 +12,7 @@ lr.on('line', function (line) {
   if(line != null && line != ''){
     tracks.push(line);
   }
-  console.log('Line read!');
+  //console.log('Line read!');
 });
 
 lr.on('end', function () {
@@ -23,7 +23,7 @@ lr.on('end', function () {
 });
 //Las Vegas bounding box SW/NE Long/Lat pair
 var locations = ['-115.414625','36.129623','-115.062072','36.380623'];
-var user_ids = [];
+
 var stream;
 var T = new Twit({
   consumer_key:         'rGM6fM7Bdam5hFV5S2SHKHwOl',
@@ -32,7 +32,6 @@ var T = new Twit({
   access_token_secret:  'ip0JMbK2GXZ541GJYvd338ujBl44n7fvBJaBMMj1RHJlw',
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
-
 
 
 //tracks = message.data;
