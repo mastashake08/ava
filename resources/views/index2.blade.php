@@ -378,7 +378,7 @@
                   </select>
                   <textarea class="form-control" placeholder="Comments" name="comments" type="text"></textarea>
                 </div>
-                <button type="submit" class="btn btn-success btn-xl wow tada center-block">Request More Info</button>
+                <button type="submit" class="btn btn-default btn-xl wow tada center-block">Request More Info</button>
                 </form>
             </div>
         </div>
